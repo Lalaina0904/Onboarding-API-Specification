@@ -1,25 +1,26 @@
-openapi: 3.0.3
+openapi: 3.0.0
 info:
+    description: |
+        This is an API Student Specification
+    version: 1.2.0
     title: Onboarding - OpenAPI 3.0
-    description: API Student Specification
-    termsOfService: http://swagger.io/terms/
+    termsOfService: "http://swagger.io/terms/"
     contact:
         email: apiteam@swagger.io
     license:
         name: Apache 2.0
-        url: http://www.apache.org/licenses/LICENSE-2.0.html
-    version: 1.2.0
-externalDocs:
-    description: Find out more about Swagger
-    url: http://swagger.io
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 servers:
-    - url: https://studentlist.swagger.io/api/v3
+    # Added by API Auto Mocking Plugin
+    - description: SwaggerHub API Auto Mocking
+      url: https://virtserver.swaggerhub.com/HEILALAINA2/STD22113/1.2.0
+    - url: "https://student.swagger.io/v2"
 tags:
     - name: student
-      description: Everything about your student
+      description: Everything about students
       externalDocs:
           description: Find out more
-          url: http://swagger.io
+          url: "http://swagger.io"
 
 paths:
     /student:
